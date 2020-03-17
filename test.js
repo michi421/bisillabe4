@@ -42,7 +42,12 @@ function check(){
 var hidecontrols = function(){
 
     if(correct){
-        document.getElementById('emo').setAttribute("src", './res/smiley/smile' + imagerng + '.jpg');
+        if(imagerng == 21){
+            document.getElementById('emo').setAttribute("src", './res/smiley/smile20.jpg');
+        }
+        else{
+            document.getElementById('emo').setAttribute("src", './res/smiley/smile' + imagerng + '.jpg');
+        }
         console.log("si");
         newimage();
 
